@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For RMTs in Ontario: after each treatment, the insurer claim and the patient receipt from the same visit record, with your registration number.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Visit Billed</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Visit Billed</a>
+  <nav><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Every treatment billed — the insurer's claim and the patient's receipt from one visit record</h1>
-    <p class="sub">For RMTs working solo or in a small clinic: the patient's insurance details are saved once, each visit is recorded with date, duration and fee, the claim for the insurer and the patient's share are worked out, and the receipt with your registration number goes out by email.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> For RMTs working solo</p>
+      <h1 class="rise" style="--i:1" data-len="long">Every treatment billed&nbsp;<span class="soft">— the insurer's claim and the patient's receipt from one visit record</span></h1>
+      <p class="rise" style="--i:2">For RMTs working solo or in a small clinic: the patient's insurance details are saved once, each visit is recorded with date, duration and fee, the claim for the insurer and the patient's share are worked out, and the receipt with your registration number goes out by email.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">I need this</a>
+      <p class="meta rise" style="--i:4">Service in preparation · No payment is accepted on this page</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="155" font-size="36" fill="#0a1524" font-weight="600">Visit Billed</text><line x1="120" y1="196" x2="1080" y2="196" fill="none" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="250" width="48" height="48" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><text x="210" y="284" font-size="30" fill="#566174">Patient and coverage</text><rect x="120" y="360" width="48" height="48" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><text x="210" y="394" font-size="30" fill="#566174">Claim per visit</text><rect x="120" y="470" width="48" height="48" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><text x="210" y="504" font-size="30" fill="#566174">Receipts</text><rect x="120" y="580" width="48" height="48" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="210" y="592" width="280" height="22" rx="11" fill="#dde2ea" /><rect x="760" y="240" width="320" height="420" rx="20" fill="#dfe8f7" /><text x="790" y="300" font-size="30" fill="#0a1524" font-weight="600">Unpaid tracked</text><rect x="800" y="440" width="48" height="180" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="868" y="500" width="48" height="120" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="936" y="400" width="48" height="220" rx="8" fill="#12397a" stroke="#dde2ea" stroke-width="2" /><rect x="1004" y="530" width="48" height="90" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Who</dt><dd>In a small clinic</dd></div>
+      <div><dt>What</dt><dd>The insurer's claim</dd></div>
+      <div><dt>How</dt><dd>Record the visit</dd></div>
+      <div><dt>When</dt><dd>In preparation</dd></div>
+    </dl>
+  </section>
 
   <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Patient and coverage</b><span>Insurer, plan, policy and member details saved once.</span><br><a class="btn" href="price.html" data-ev="feature_patient">I need this</a></div>
-      <div class="card"><b>Claim per visit</b><span>Insurer's portion and patient's share worked out for each treatment.</span><br><a class="btn" href="price.html" data-ev="feature_claim">I need this</a></div>
-      <div class="card"><b>Receipts</b><span>Official receipt with your registration number, sent by email.</span><br><a class="btn" href="price.html" data-ev="feature_receipt">I need this</a></div>
-      <div class="card"><b>Unpaid tracked</b><span>Claims awaiting payment and balances owed by patients.</span><br><a class="btn" href="price.html" data-ev="feature_unpaid">I need this</a></div>
+    <div class="stack"><h2>What you get</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="70" width="660" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="110" y="140" font-size="32" fill="#0a1524" font-weight="600">Patient and coverage</text><rect x="110" y="190" width="44" height="44" rx="8" fill="#dfe8f7" /><polyline points="120,212 128,222 146,204" fill="none" stroke="#12397a" stroke-width="5" /><rect x="180" y="200" width="420" height="24" rx="12" fill="#dde2ea" /><rect x="110" y="265" width="44" height="44" rx="8" fill="#dfe8f7" /><polyline points="120,287 128,297 146,279" fill="none" stroke="#12397a" stroke-width="5" /><rect x="180" y="275" width="380" height="24" rx="12" fill="#dde2ea" /><rect x="110" y="340" width="44" height="44" rx="8" fill="#dfe8f7" /><polyline points="120,362 128,372 146,354" fill="none" stroke="#12397a" stroke-width="5" /><rect x="180" y="350" width="340" height="24" rx="12" fill="#dde2ea" /><rect x="110" y="415" width="44" height="44" rx="8" fill="#dfe8f7" /><rect x="180" y="425" width="300" height="24" rx="12" fill="#dde2ea" /></svg></div>
+        <h3>Patient and coverage</h3><p>Insurer, plan, policy and member details saved once.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_patient">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><text x="70" y="110" font-size="32" fill="#0a1524" font-weight="600">Claim per visit</text><rect x="70" y="150" width="250" height="360" rx="18" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="480" y="150" width="250" height="360" rx="18" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="100" y="200" width="160" height="22" rx="8" fill="#dde2ea" /><rect x="510" y="200" width="160" height="22" rx="8" fill="#b9c3d2" /><rect x="100" y="260" width="120" height="22" rx="8" fill="#dde2ea" /><rect x="510" y="260" width="120" height="22" rx="8" fill="#b9c3d2" /><rect x="100" y="320" width="180" height="22" rx="8" fill="#dde2ea" /><rect x="510" y="320" width="180" height="22" rx="8" fill="#b9c3d2" /><rect x="100" y="380" width="100" height="22" rx="8" fill="#dde2ea" /><rect x="510" y="380" width="100" height="22" rx="8" fill="#b9c3d2" /><line x1="340" y1="320" x2="450" y2="320" fill="none" stroke="#12397a" stroke-width="6" /><polygon points="450,308 474,320 450,332" fill="#12397a" /></svg></div>
+        <h3>Claim per visit</h3><p>Insurer's portion and patient's share worked out for each treatment.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_claim">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="70" width="660" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="110" y="140" font-size="32" fill="#0a1524" font-weight="600">Receipts</text><rect x="110" y="190" width="420" height="20" rx="8" fill="#dde2ea" /><rect x="110" y="242" width="360" height="20" rx="8" fill="#dde2ea" /><rect x="110" y="294" width="480" height="20" rx="8" fill="#dde2ea" /><rect x="110" y="346" width="280" height="20" rx="8" fill="#dde2ea" /><rect x="110" y="398" width="400" height="20" rx="8" fill="#dde2ea" /><circle cx="600" cy="430" r="52" fill="#dfe8f7" stroke="#12397a" stroke-width="6" /><polyline points="574,430 594,450 630,406" fill="none" stroke="#12397a" stroke-width="8" /></svg></div>
+        <h3>Receipts</h3><p>Official receipt with your registration number, sent by email.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_receipt">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="70" width="660" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="110" y="140" font-size="32" fill="#0a1524" font-weight="600">Unpaid tracked</text><line x1="120" y1="300" x2="680" y2="300" fill="none" stroke="#dde2ea" stroke-width="6" /><rect x="120" y="250" width="120" height="100" rx="28" fill="#ffffff" stroke="#12397a" stroke-width="4" /><rect x="270" y="250" width="120" height="100" rx="28" fill="#ffffff" stroke="#12397a" stroke-width="4" /><rect x="420" y="250" width="120" height="100" rx="28" fill="#12397a" stroke="#12397a" stroke-width="4" /><rect x="570" y="250" width="120" height="100" rx="28" fill="#ffffff" stroke="#12397a" stroke-width="4" /><rect x="120" y="400" width="500" height="24" rx="12" fill="#dde2ea" /><rect x="120" y="450" width="360" height="24" rx="12" fill="#b9c3d2" /></svg></div>
+        <h3>Unpaid tracked</h3><p>Claims awaiting payment and balances owed by patients.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_unpaid">I need this</a>
+      </article>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">Solo RMT with about 25 treatments a week. After a 60-minute treatment, she taps the visit as completed: the claim for the patient's group plan is prepared with the fee and her registration number, the patient's remaining share is shown, and the receipt arrives in the patient's inbox before they reach their car.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  <section id="example" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Example</h2>
+      <p>Solo RMT with about 25 treatments a week. After a 60-minute treatment, she taps the visit as completed: the claim for the patient's group plan is prepared with the fee and her registration number, the patient's remaining share is shown, and the receipt arrives in the patient's inbox before they reach their car.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="150" x2="1000" y2="150" fill="none" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="30" fill="#0a1524" font-weight="600" text-anchor="middle">60-minute</text><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="30" fill="#0a1524" font-weight="600" text-anchor="middle">group plan</text><circle cx="960" cy="150" r="22" fill="#12397a" stroke="#12397a" stroke-width="6" /><text x="960" y="230" font-size="30" fill="#0a1524" font-weight="600" text-anchor="middle">the receipt</text><rect x="120" y="300" width="960" height="420" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="380" font-size="36" fill="#0a1524" font-weight="600">registration number</text><rect x="170" y="430" width="64" height="64" rx="12" fill="#dfe8f7" /><rect x="260" y="430" width="64" height="64" rx="12" fill="#dfe8f7" /><rect x="350" y="430" width="64" height="64" rx="12" fill="#dfe8f7" /><rect x="440" y="430" width="64" height="64" rx="12" fill="#dfe8f7" /><rect x="530" y="430" width="64" height="64" rx="12" fill="#12397a" /><rect x="620" y="430" width="64" height="64" rx="12" fill="#dfe8f7" /><text x="170" y="620" font-size="30" fill="#566174">patient's inbox</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
-    <p>Most massage therapy patients in Ontario pay with the help of extended health benefits. For the RMT, that means two pieces of paperwork after every treatment: a claim to the patient's insurer, or a receipt the patient can submit themselves, and a record of what the patient still owes.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>How it works</h2></div>
+    <div class="stack">
+      <p>Most massage therapy patients in Ontario pay with the help of extended health benefits. For the RMT, that means two pieces of paperwork after every treatment: a claim to the patient's insurer, or a receipt the patient can submit themselves, and a record of what the patient still owes.</p>
     <p>Insurers expect specific details on every receipt and claim: the practitioner's name and registration number, the date and length of the treatment, the fee and the patient's information. When any of these is missing or wrong, the claim comes back, and the RMT spends the evening fixing it.</p>
     <p>Many solo RMTs handle this with a mix of booking software, spreadsheets and handwritten receipts. Claims are submitted in batches at the end of the week, unpaid claims are hard to follow, and it is easy to lose track of which patient still has a balance.</p>
     <p>The software brings it together. For each patient you save their insurer, plan and member details once, along with any coordination of benefits with a spouse's plan. On every visit, those details are already there.</p>
@@ -116,31 +150,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>If you work in a clinic with other therapists, each therapist bills under their own name and registration number, and the clinic owner sees everything together.</p>
     <p>Getting started takes an evening: your registration number, your fees and your regular patients with their coverage. It works in the browser on a phone, tablet or computer, with nothing to install.</p>
     <p>The software is built for practising RMTs in Ontario. It is in preparation: we are checking whether therapists need it before it is built. The practitioner remains responsible for their records, receipts and claims.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Questions</h2>
-    <h3>Who is it for?</h3>
-    <p>Practising registered massage therapists in Ontario, solo or in a small clinic.</p>
-    <h3>What goes on the receipt?</h3>
-    <p>Your name and registration number, the date, length and type of treatment, the fee and the patient's details.</p>
-    <h3>Can it track unpaid claims?</h3>
-    <p>Yes, claims awaiting payment and patient balances stay visible until they are paid.</p>
-    <h3>Do I need to install anything?</h3>
-    <p>No, it works in the browser on a phone, tablet or computer.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The software is in preparation, and we are checking whether therapists need it.</p>
+    <div class="stack"><h2>Questions</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Who is it for?</h3><p>Practising registered massage therapists in Ontario, solo or in a small clinic.</p></div>
+      <div class="split flip"><h3>What goes on the receipt?</h3><p>Your name and registration number, the date, length and type of treatment, the fee and the patient's details.</p></div>
+      <div class="split flip"><h3>Can it track unpaid claims?</h3><p>Yes, claims awaiting payment and patient balances stay visible until they are paid.</p></div>
+      <div class="split flip"><h3>Do I need to install anything?</h3><p>No, it works in the browser on a phone, tablet or computer.</p></div>
+      <div class="split flip"><h3>Can I use it already?</h3><p>Not yet. The software is in preparation, and we are checking whether therapists need it.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Set up your practice</h2>
-    <p><label>Treatments per week<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Up to 10</option><option>10–25</option><option>25–40</option><option>More than 40</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Set up your practice</h2>
+    </div>
+    <div class="tile stack">
+      <label>Treatments per week<select data-ev-focus="form_start"><option value="">— please choose —</option><option>Up to 10</option><option>10–25</option><option>25–40</option><option>More than 40</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Start</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Visit Billed</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
-  <p class="muted">Billing software for your practice. The practitioner remains responsible for records, receipts and claims.</p>
+  <p>Billing software for your practice. The practitioner remains responsible for records, receipts and claims.</p>
 </div></footer>
 
 </body>
